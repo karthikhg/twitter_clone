@@ -8,5 +8,15 @@
       </h1>
     </section>
   </aside>
+
+  <div class="span8">
+    <% if @user.posts.any? %>
+      <h3>kTweets by this user (<%= @user.posts.count %>)</h3>
+      <ol class="posts">
+        <%= render @posts %>
+      </ol>
+    <% end %>
+  </div>
+
 </div>
 <%= @user.name %>, <%= @user.email %>
