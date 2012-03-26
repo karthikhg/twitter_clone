@@ -59,7 +59,7 @@ TwitterClone::Application.configure do
   config.active_support.deprecation = :notify
 
   # Precompile Blueprint CSS
-  config.assets.precompile += [ "blueprint/*.css" ]
+  #config.assets.precompile += [ "blueprint/*.css" ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, 
   # and use secure cookies.
